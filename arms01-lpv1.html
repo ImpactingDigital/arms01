@@ -42,21 +42,22 @@
 
 </head>
 
-<body>
-    <header class="banner">
+<body class="its">
+    <header class="banner-lp">
         
         <div class="w-section">
-            <div class="w-container container">
+            <div class="w-container container w4s">
                 <div class="w-row row-2">
                     
                     <div class="w-col w-col-6">
-                        <div>Way4Smart-logo</div>
+                        <div class="w4s-logo-lp">
+                            <img src="images/W4S_logo.png" />
+                        </div>
                     </div>
-                    
-         
-                    
+                
                     <div class="w-col w-col-6 text-detalhe3">
-                        <h1 class=""><span class="text-style-1">A SUA CIDADE</span><br><span class="text-style-2">MAIS INTELIGENTE</span></h1>
+                        <h1 class="h4-its"><span class="text-style-2">A SUA CIDADE</span><br><span class="text-style-2">MAIS INTELIGENTE</span></h1>
+                        <p></p>
                         <p>O Way4Smart é uma plataforma tecnológica de gestão que apoia os gestores de rede das cidades na <b>materialização e concretização dos planos de mobilidade</b> em prol de um desenvolvimento mais sustentável, cumprindo com as orientações da Comissão Europeia.</p>
                     </div>
                     
@@ -68,25 +69,27 @@
 
     <section>
         
-        <div class="w-section">
-            <div class="w-container container">
+        <div class="w-section" id="section2-w4s">
+            <div class="w-container container w4s">
                 <div class="w-row row-2">
                     
                     <div class="w-col w-col-6 text-detalhe3">
-                        <h2><span class="text-style1">AS</span> <span class="text-style2">SMART CITIES</span></h2>
+                        <h2 class="h4-its"><span class="text-style-1">AS</span> <span class="text-style-2">SMART CITIES</span></h2>
+                        <p></p>
                         <p>As Smart Cities são espaços urbanos criativos, inteligentes e sustentáveis, potenciados através da tecnologia para proporcionar aos cidadãos uma melhor qualidade de vida.</p>
                         <p>Os excelentes resultados da <b>aplicação da tecnologia na gestão da mobilidade nas cidades</b>, e o seu impacto na vida dos cidadãos, é um dos principais fatores que distingue as Smart Cities de todas as outras.</p>
                     </div>
                     
                     <div class="w-col w-col-6">
-                        <img/>
+                        <div class="w4s-bg2-lp">
+                        </div>
                     </div>
                     
                 </div>
             </div>
         </div>
              
-        <div class="w-section">
+        <div class="w-section" id="section3-w4s">
             <div class="w-container container">
                 <div class="w-row row-2">
                     
@@ -107,7 +110,7 @@
             </div>
         </div>
         
-        <div class="w-section">
+        <div class="w-section" id="section4-w4s">
             <div class="w-container container">
                 <div class="w-row row-4">
                     
@@ -161,7 +164,7 @@
         
     </section>
     
-    <section class="middle-banner">
+    <section class="middle-banner-lp">
 
         <div class="w-section">
             <div class="w-container container">
@@ -187,7 +190,7 @@
     
     <section>
     
-        <div class="w-section">
+        <div class="w-section" id="section5-w4s">
             <div class="w-container container">
                 <div class="w-row row-2">
                     
@@ -203,7 +206,7 @@
             </div>
         </div>
         
-        <div class="w-section">
+        <div class="w-section" id="section6-w4s">
             <div class="w-container container">
                 <div class="w-row row-4">
                     
@@ -254,17 +257,19 @@
 
 <style>
 
-    .middle-banner{
+    .middle-banner-lp{
         background-color: #00afab;
         color: white;
-    }
-    .banner, .w-section{
         padding: 50px 0 50px 0;
-        margin: 50px 0 50px 0;
+        margin: 25px 0 25px 0;
+    }
+    #section2-w4s, #section3-w4s, #section4-w4s, #section5-w4s, #section6-w4s {
+        padding: 50px 0 50px 0;
+        margin: 25px 0 25px 0;
     }
     .smart-circles{
         position: absolute;
-        display: inline-block;
+        display: table;
         padding-top: 30px;
         margin-top: -80px;
         color: white;
@@ -284,6 +289,25 @@
         border-radius:50px;
         margin-top: 90px;
         text-align: center;
+    }
+    .w4s-logo-lp{
+        max-width: 200px;
+    }
+    .banner-lp{
+        position: relative;
+        padding: 50px 0 220px 0;
+        margin: 0 0 25px 0;
+        background-image: url(images/bg-smartcities-01-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: cover;
+    }
+    .w4s-bg2-lp{
+        background-image: url(images/ImagemCidade_w4s.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
     }
 
 
