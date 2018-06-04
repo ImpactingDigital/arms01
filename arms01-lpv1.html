@@ -347,15 +347,22 @@
     .w4s-logo-lp{
         max-width: 200px;
     }
-    .w4s-logo-lp:beffore{
-        content:" ";
-        display:block;
-        position:absolute;
-        top:0;
-        border:1px solid #00AFAB;
-        width:500px;
-        height:500px;
-
+    @media screen and (min-width: 767px){
+        .w4s-logo-lp{
+            margin-top:60px;
+            max-width:400px
+        }
+        .w4s-logo-lp::before{
+            content:" ";
+            display:block;
+            position:absolute;
+            top:-100px;
+            left:-30px;
+            border:1px solid #00AFAB;
+            width:400px;
+            height:400px;
+            border-radius:0 0 200px 200px; 
+        }
     }
     .banner-lp{
         position: relative;
