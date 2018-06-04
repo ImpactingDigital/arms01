@@ -89,7 +89,7 @@
         </div>
              
         <div class="w-section" id="section3-w4s">
-            <div class="w-container container">
+            <div class="w-container container w4s">
                 <div class="w-row row-2">
                     
                     <div class="w-col w-col-6">
@@ -98,7 +98,8 @@
 
                     <div class="w-col w-col-6 text-detalhe3">
                         <p><b>FAÇA A GESTÃO EFICAZ DA MOBILIDADE DE PESSOAS BENS E SERVIÇOS COM O</b></p>
-                        <h2><b>WAY4SMART</b></h2>
+                        <h2 class="text-style-2 h4-its"><b>WAY4SMART</b></h2>
+                        <p></p>
                         <a href="#" class="w-tab-link w--current w-inline-block places">SAIBA MAIS</a>
 
                     </div>
@@ -240,14 +241,27 @@
             </div>
         </div>
         
-    
     </section>
     
-    
-    <footer>
-
+    <footer class="footer-cta-lp">
+        
+        <div class="w-section ">
+            <div class="w-container container w4s">
+                <div class="w-row row-2">
+                    <div class="w-col w-col-6 text-detalhe3">
+                        <div class="">
+                            <a href="#" style="text-decoration: none;">
+                                <h2 class="h4-its"><span class="text-style-1">FALE</span> <span class="text-style-2">CONNOSCO</span></h2>
+                                <p></p>
+                                <p style="color: #707070;"><b>ESTAMOS PRONTOS PARA TORNAR A SUA CIDADE NUMA SMART CITY</b></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </footer>
-
 
 </body>
 </html>
@@ -262,16 +276,22 @@
         background-position: left bottom;
         background-size: cover;
         color: white;
-        padding: 50px 0 220px 0;
+        padding: 50px 0 260px 0;
         margin: 25px 0 25px 0;
+    }
+    @media screen and (min-width: 480px){
+    .middle-banner-lp{
+        background-image: url(images/bg-smart-cities-02.jpg);
+        background-position: right bottom;
+        }
     }
     #section2-w4s, #section3-w4s, #section4-w4s, #section5-w4s, #section6-w4s {
         padding: 50px 0 50px 0;
         margin: 25px 0 25px 0;
     }
     .smart-circles{
-        position: absolute;
-        display: table;
+        position: relative;
+        display: inline-block;
         padding-top: 30px;
         margin-top: -80px;
         color: white;
@@ -282,7 +302,7 @@
     }
     .smart-description{
         display: inline-block;
-        padding: 55px 25px 25px 25px;
+        padding: 25px 25px 25px 25px;
         text-align: center;
 
     }
@@ -303,6 +323,13 @@
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: cover;
+    }
+    @media screen and (min-width: 480px){
+    .banner-lp{
+        background-image: url(images/bg-smart-cities-01.jpg);
+        background-position: right bottom;
+        padding: 50px 0 420px 0;
+        }
     }
     #section2-w4s{
         background-image: url(images/bg-pills-01.png);
@@ -332,6 +359,12 @@
     }
     .bg-s-4-lp{
         background-image: url(images/bg-topic-acompanhar.jpg);
+    }
+    .footer-cta-lp{
+        background-color: #222222;
+        padding: 50px 0 50px 0;
+        margin: 25px 0 0 0;
+        text-align: left;
     }
 
 </style>
