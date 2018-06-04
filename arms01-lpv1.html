@@ -378,11 +378,17 @@
         background-image: url(images/bg-smart-cities-01-large.jpg);
         }
     }
-    #section2-w4s, #section5-w4s{
+    #section2-w4s{
         background-image: url(images/bg-pills-01.png);
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: contain;
+    }
+    #section5-w4s{
+        background-image: url(images/bg-pills-01.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; 
     }
     .special-items-lp{
         display: table-cell;
@@ -435,9 +441,22 @@
     .section-screen-lp .text-style-2.h4-its{
         text-align: center;
     }
+    @media screen and (min-width: 767px){
+    .section-screen-lp{
+        text-align: left;
+        padding-top:140px;
+    }
+    .section-screen-lp .text-style-2.h4-its{
+        text-align: left;
+    }  
+    }
     .section-screen-lp a.w--current.w-inline-block.places{
         color: #1DAFA8;
         border-color: #1DAFA8;
+        text-decoration: none;
+    }
+    .middle-banner-lp a.w--current.w-inline-block.places{
+        text-decoration: none;
     }
 </style>
 
