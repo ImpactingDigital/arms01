@@ -35,9 +35,21 @@ Developer: Impacting Digital
             background-size:1140px;
         }
     }
-.w4s #section2-w4s,  #section4-w4s, #section6-w4s {
+.w4s #section2-w4s{
     padding: 50px 0 50px 0;
     margin: 25px 0 25px 0;
+}
+#section6-w4s{
+    margin:25px auto;
+}
+#section6-w4s, #section4-w4s{
+    max-width:480px;
+    margin:0 auto
+}
+@media screen and (min-width: 767px){
+    #section6-w4s, #section4-w4s{
+    max-width: 100%;
+    }
 }
 .w4s .smart-circles{
     display: inline-block;
@@ -231,8 +243,17 @@ Developer: Impacting Digital
     text-decoration: none;
     float: none;
 }
-.w4s .section-screen-lp a.contacts-here.w--current.w-inline-block.places{
+.w4s .places.w--current:hover{
+    background-color: #fff;
+    color:#1DAFA8;
+}
+.w4s .section-screen-lp a.contacts-here.w--current.w-inline-block.places:hover{
+    background-color: #1DAFA8;
+    color:#fff;
 }
 .w4s .middle-banner-lp a.w--current.w-inline-block.places{
     text-decoration: none;
+}
+a.contacts-here{
+    color:inherit;
 }
