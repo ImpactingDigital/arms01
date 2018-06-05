@@ -100,7 +100,7 @@
         
         <div class="w-section" id="section4-w4s">
             <div class="w-container container">
-                <div class="w-row row-4">
+                <div class="w-row row-4 smart-boxes">
                     <div class="w-col w-col-6 text-detalhe3">
                         <div class="smart-box">
                             <div class="smart-circles" style="background-color: #F8BF25;">
@@ -169,7 +169,10 @@
                     <div class="w-col w-col-10 text-detalhe3">
                         <h2 class="h4-its"><span>O QUE O </span><span class="text-style-2">WAY4SMART</span><br><span >FAZ PELA SUA CIDADE?</span></h2>
                         <p></p>
-                        <div><iframe class="video-w4s-lp" src="https://www.youtube.com/embed/_uj-E3tiWRI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                        <div>
+                            <iframe id="ytplayer" class="video-w4s-lp" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/_uj-E3tiWRI?controls=0&disablekb=1&modestbranding=1&rel=0&showinfo=0&color=white"
+                            frameborder="0" allowfullscreen></iframe>
+                                </div>
                     </div>
                 </div>
             </div>
@@ -229,7 +232,7 @@
 <style>
     .w4s .middle-banner-lp{
         background-color: #00afab;
-        background-image: url(http://www.armis.pt/media/1732/bg-smart-cities-02-mobile.jpg);
+        background-image: url(http://www.armis.pt/media/1723/bg-smart-cities-02-mobile.jpg);
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: cover;
@@ -240,7 +243,7 @@
     @media screen and (min-width: 767px){
         .w4s .middle-banner-lp{
             padding: 80px 0 80px 0;
-            background-image: url(http://www.armis.pt/media/1732/bg-smart-cities-02.jpg);
+            background-image: url(http://www.armis.pt/media/1724/bg-smart-cities-02.jpg);
             background-position: right bottom;
         }
     }
@@ -270,34 +273,45 @@
     }
     .w4s .smart-box{
         background-color: #ECF3F7;
-        border-radius:50px;
+        border-radius:30px;
         margin-top: 90px;
         text-align: center;
     }
 
     @media screen and (min-width: 767px){
+        .w4s .smart-box{
+            position:relative;
+            min-height:150px;
+            background-color: #ECF3F7;
+            border-radius:75px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .w4s .smart-boxes .text-detalhe3:nth-child(odd) .smart-description{
+            padding: 15px 160px 0 15px;
+            text-align: right;
+        }
+        .w4s .smart-boxes .text-detalhe3:nth-child(odd) .smart-circles{
+            left:auto;
+            right:0;
+        }
         .w4s .smart-circles{
-            padding-top: 50px;
-            display:table-cell;
-            margin: 25px;
+            padding-top: 36px;
+            position:absolute;
+            left:0;
+            top:0;
+            margin:10px;
             color: white;
             text-align: center;
             border-radius:100px;
-            width: 150px;
-            height: 150px;
+            width: 130px;
+            height: 130px;
         }
         .w4s .smart-description{
-            display: table-cell;
+            display:table-cell;
             vertical-align: middle;
-            padding: 0 15px 0 15px;
+            padding: 15px 15px 0 160px;
             text-align: left;
-        }
-        .w4s .smart-box{
-            background-color: #ECF3F7;
-            border-radius:100px;
-            margin-top: 20px;
-            padding: 10px;
-    
         }
     }
     .w4s .w4s-logo-lp{
@@ -306,14 +320,14 @@
     .w4s-logo-lp h1{
         text-indent: -9999px;
         width:200px;
-        height:48px;
+        height:46px;
         background-image: url(http://www.armis.pt/media/1731/w4s_logo-2x.png);
         background-size:cover;
     }
     @media screen and (min-width: 767px){
         .w4s-logo-lp h1{
             width:320px;
-            height:75px;
+            height:74px;
         }
         .w4s .w4s-logo-lp{
             margin-top:60px;
@@ -335,7 +349,7 @@
         position: relative;
         padding: 50px 0 220px 0;
         margin: 0 0 25px 0;
-        background-image: url(http://www.armis.pt/media/1733/bg-smartcities-01-mobile.jpg);
+        background-image: url(http://www.armis.pt/media/1725/bg-smartcities-01-mobile.jpg);
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: cover;
@@ -349,7 +363,7 @@
     }
     @media screen and (min-width: 1441px){
         .w4s .banner-lp{
-            background-image: url(http://www.armis.pt/media/1732/bg-smart-cities-01-large.jpg);
+            background-image: url(http://www.armis.pt/media/1721/bg-smart-cities-01-large.jpg);
         }
     }
     .w4s #section2-w4s{
@@ -376,16 +390,16 @@
         background-size: cover;
     }
     .w4s .bg-s-1-lp{
-        background-image: url(images/bg-topic-analisar.jpg);
+        background-image: url(http://www.armis.pt/media/1727/bg-topic-analisar.jpg);
     }
     .w4s .bg-s-2-lp{
-        background-image: url(images/bg-topic-implementar.jpg);
+        background-image: url(http://www.armis.pt/media/1728/bg-topic-implementar.jpg);
     }
     .w4s .bg-s-3-lp{
-        background-image: url(images/bg-topic-informar.jpg);
+        background-image: url(http://www.armis.pt/media/1729/bg-topic-informar.jpg);
     }
     .w4s .bg-s-4-lp{
-        background-image: url(images/bg-topic-acompanhar.jpg);
+        background-image: url(http://www.armis.pt/media/1726/bg-topic-acompanhar.jpg);
     }
     @media screen and (min-width: 767px){
         .w4s .special-items-lp{
